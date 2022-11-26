@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <a href="#" class="navbar-brand"><img src="images/mars-logo.svg" alt="logo" width="200" height="40"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar"><span
+                class="navbar-toggler-icon"></span></button>
+        <div id="collapsibleNavbar" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active textShadow">
+                    <a class="nav-link" href="#"><i class="fas fa-home red"></i> HOME</a>
+                </li>
+                <li class="nav-item dropdown textShadow">
+                    <a id="languageDropdown" class="nav-link dropdown-toggle" role="button" aria-haspopup="true"
+                        aria-expanded="false" aria-hidden="false" aria-controls="langList" data-toggle="dropdown"
+                        data-auto-close="outside" href=""><i class="fas fa-language red"></i> LANGUAGES</a>
+                    <div id="langList" class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Arabic</a>
+                        <a class="dropdown-item" href="#">Chinese</a>
+                        <a class="dropdown-item" href="#">Turkish</a>
+                        <a class="dropdown-item" href="#">Dutch</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item red" href="#">Another Language</a>
+                    </div>
+                </li>
+                <li class="nav-item textShadow">
+                    <a class="nav-link" href="#"><i class="fab fa-cloudflare red"></i> TECHNOLOGY</a>
+                </li>
+                <li class="nav-item textShadow">
+                    <a class="nav-link" href="#"><i class="fas fa-city red"></i> INDUSTRIES</a>
+                </li>
+                <li class="nav-item textShadow">
+                    <a class="nav-link" href="#"><i class="fab fa-gratipay red"></i> ABOUT</a>
+                </li>
+            </ul>
+            <div class="navbarFroms mx-lg-auto m-lg-0 mt-3">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                    style="max-width: 75%; min-width: 8ch;">
+                <button class="btn" type="submit" style="max-width: 15%; min-width: 8ch;">Search</button>
+            </div>
+            <button class="btn" type="button" data-toggle="modal" data-target="#loginModal"
+                style="max-width: 15%; min-width: 7ch;">Login</button>
+        </div>
+    </nav>
+    <main>
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-inline-block w-100 w-lg-70" src="images/landmarks0.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-lg-inline-block">
+                        <h5>Your <span class="blackTextShadow">Customers</span> Could Be Anywhere</h5>
+                        <h6>Does Your <span class="blackTextShadow">Product</span> Speak Thier Languages?</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-inline-block w-100 w-lg-70" src="images/landmarks1.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-lg-inline-block">
+                        <h5>Your <span class="blackTextShadow">Target Market</span> Could Be Anywhere</h5>
+                        <h6>Does Your <span class="blackTextShadow">Customer Experience</span> Speak Thier Languages?
+                        </h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-inline-block w-100 w-lg-70" src="images/landmarks2.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-lg-inline-block">
+                        <h5>Your <span class="blackTextShadow">Audience</span> Could Be Anywhere</h5>
+                        <h6>Does Your <span class="blackTextShadow">Website</span> Speak Thier Languages?</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-inline-block w-100 w-lg-70" src="images/landmarks3.jpg" alt="Fourth slide">
+                    <div class="carousel-caption d-none d-lg-inline-block">
+                        <h5>Your <span class="blackTextShadow">Customers</span> Could Be Anywhere</h5>
+                        <h6>Does Your <span class="blackTextShadow">Product</span> Speak Thier Languages?</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-inline-block w-100 w-lg-70" src="images/landmarks4.jpg" alt="Fifth slide">
+                    <div class="carousel-caption d-none d-lg-inline-block">
+                        <h5>Your <span class="blackTextShadow">Target Market</span> Could Be Anywhere</h5>
+                        <h6>Does Your <span class="blackTextShadow">Customer Experience</span> Speak Thier Languages?
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="loginModal" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title headTextShadow">Login</h1>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="" action="">
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email Address:</label>
+                            <input id="email" type="email" class="form-control input-lg" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password:</label>
+                            <input id="password" type="password" class="form-control input-lg" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="remember">
+                                <input id="remember" type="checkbox" name="remember" value=""> Remember Me</label>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <button type="submit" class="btn">Login</button>
+                                <a class='btn btn-link' href="">Forget Your Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- welcome -->
+    <section class="container-fluid bg-dark text-light py-3 mb-0">
+        <div class="container pb-3 ">
+            <h2 class="title mb-2 headTextShadow text-left">Our Professional Translation Services:</h2>
+            <p class="desc">From documents to websites and software, Mars Translation offers professional translation
+                services
+                for all types of content in a broad range of languages. Special attention to detail, subject matter
+                experts and fast turnaround make us a reliable translation company.</p>
+            <button class="btn bg-danger" role="button">Learn More</button>
+        </div>
+    </section>
+    <!-- collapse -->
+    <section class="m-0">
+        <div class="container-fluid bgCyan text-light py-3">
+            <div class="container pb-1 text-center">
+                <h2 class="title mb-2 headTextShadow">Whats Makes Us The Best Translation Company?</h2>
+            </div>
+        </div>
+        <div class="container-fluid noMP row">
+            <div class="col-12 noMP">
+                <button class="container-fluid collapseButtons bg-dark m-0 text-light noBorder" data-toggle="collapse"
+                    href="#collapseText1" role="button" aria-expanded="false" aria-controls="collapseText1"
+                    style="position: relative;"><span><i class="far fa-star"></i></span> Rates</button>
+                <div class="collapse multi-collapse bgLight px-3 py-2 m-0" id="collapseText1">
+                    <h3 class="pb-2 textShadowCyan">Higher Rates And Lower Price</h3>
+                    <p class="noMP textInd">We have specially designed packages to address the translation needs of all
+                        our
+                        customers.
+                        Our affordable and competitive prices start from $0.05/word so that all the businesses
+                        can pursue their dream of going global.</p>
+                </div>
+            </div>
+            <div class="col-12 noMP">
+                <button class="collapseButtons w-100 bg-dark m-0 text-light noBorder" type="button"
+                    data-toggle="collapse" data-target="#collapseText2" aria-expanded="false"
+                    aria-controls="collapseText2"><span><i class="far fa-arrow-alt-circle-up"></i></span>
+                    Quality</button>
+                <div class="collapse multi-collapse m-0 px-3 py-2 " id="collapseText2"
+                    style="background-color: #DBD2E0;">
+                    <h3 class="pb-2 textShadowCyan">Best Quality And Lower Price</h3>
+                    <p class="noMP textInd">We know what your business means to you, so we want to deliver the best to
+                        you.
+                        Our robust quality assurance system is specially designed to engage only top rated translators
+                        from
+                        all over the world for
+                        projects of our clients.</p>
+                </div>
+            </div>
+            <div class="col-12 noMP">
+                <button class="collapseButtons bg-dark w-100 m-0 text-light noBorder" type="button"
+                    data-toggle="collapse" data-target="#collapseText3" aria-expanded="false"
+                    aria-controls="collapseText3"><span><i class="far fa-calendar-check"></i></span> Speed</button>
+                <div class="collapse multi-collapse bgLight px-3 py-2 m-0" id="collapseText3">
+                    <h3 class="pb-2 textShadowCyan">Higher Speed And Lower Price</h3>
+                    <p class="noMP textInd">We believe in facilitating our customers to the maximum. So, we are marked
+                        by the
+                        fastest turnaround of 2000 words/day and our translators strictly follow deadlines. We also go
+                        extra miles in case of emergency project delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- code -->
+    <section class="m-0 bgCyan pb-3">
+        <div>
+            <div class="container-fluid bgCyan text-light py-3">
+                <div class="container text-center">
+                    <h2 class="title mb-2 headTextShadow">GLAD TO HELP YOU 💕</h2>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark text-light py-2">
+                <p style="font: 1.5rem serif;">For more templates check our <a
+                        class="btn btn-link whiteTextShadow p-0 mt--7" href="https://www.lipsum.com/" target="_blank"
+                        style="font: 1.5rem serif;">message forms</a> </p>
+                <button type="button" id="codeCopyBtn1" class="btn btn-secondary" data-toggle="tooltip"
+                    data-placement="right" title="" data-original-title="copy email" onclick="copy(1)">copy</button>
+                <p class="codecode container px-5">Email: <code id="gmail">random@mars.us</code></p>
+            </div>
+        </div>
+        <div>
+            <div class="container-fluid bgCyan text-light py-3">
+                <div class="container text-center">
+                    <h2 class="title mb-2 headTextShadow">WHERE TO FIND US? 🤔</h2>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark text-light py-2">
+                <p style="font: 1.5rem serif;">For an acurate address visit <a
+                        class="btn btn-link whiteTextShadow p-0 mt--7" href="https://www.google.com/maps"
+                        target="_blank" style="font: 1.5rem serif;">google maps</a> </p>
+                <button type="button" id="codeCopyBtn2" class="btn btn-secondary" data-toggle="tooltip"
+                    data-placement="top" title="" data-original-title="copy address" onclick="copy(2)">copy</button>
+                <p class="codecode container px-5">NY Office: <code id="address">4385 Alfred Drive Brooklyn NY</code>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="container-fluid bgCyan text-light py-3">
+                <div class="container text-center">
+                    <h2 class="title mb-2 headTextShadow">YOU WANT ANOTHER ADDRESS? 💡</h2>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark text-light py-2">
+                <p style="font: 1.5rem serif;">For an acurate address visit <a
+                        class="btn btn-link whiteTextShadow p-0 mt--7" href="https://www.google.com/maps"
+                        target="_blank" style="font: 1.5rem serif;">google maps</a> </p>
+                <button type="button" id="codeCopyBtn3" class="btn btn-secondary" data-toggle="tooltip"
+                    data-placement="bottom" title="" data-original-title="copy address" onclick="copy(3)">copy</button>
+                <p class="codecode container px-5">Utah Office: <code id="address1">1519 Walton Street Provo UT</code>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- first fixed bg -->
+    <section class="bg bgOne container-fluid"></section>
+    <!-- companies -->
+    <section class="container-fluid bgDarkRed noMP pt-3">
+        <h2 class="text-light text-center title mb-3 blackTextShadow">We know the technology industry</h2>
+        <div class="row bgRed w-100 justify-content-between pb-5 mx-0" style="gap: 5px 20px;">
+            <div class="compCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0">
+                <img class="card-img-top w-100 compImg" src="images/coImg1.jpg" alt="Card image">
+                <div class="card-body bgDarkRed text-light d-flex flex-column justify-content-around">
+                    <img class="comLogo w-50 align-self-center" src="images/comp1.png" alt="lufthansa">
+                    <p class="card-text">Lufthansa seamlessly integrates with Adobe Experience Manager</p>
+                    <a href="#" class="text-light">CASE STUDY ></a>
+                </div>
+            </div>
+            <div class="compCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0">
+                <img class="card-img-top w-100 compImg" src="images/coImg2.jpg" alt="Card image">
+                <div class="card-body bgDarkRed text-light d-flex flex-column justify-content-around">
+                    <img class="comLogo w-50 align-self-center" src="images/comp2.png" alt="Hero DIGITAL">
+                    <p class="card-text">Hero Digital created a seamless experience with GlobalLink</p>
+                    <a href="#" class="text-light">CASE STUDY ></a>
+                </div>
+            </div>
+            <div class="compCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0">
+                <img class="card-img-top w-100 compImg" src="images/coImg3.jpg" alt="Card image">
+                <div class="card-body bgDarkRed text-light d-flex flex-column justify-content-around">
+                    <img class="comLogo w-50 align-self-center" src="images/comp3.png" alt="TREK">
+                    <p class="card-text">GlobalLink helps Terk drive maximum ROI in markets abroad</p>
+                    <a href="#" class="text-light">CASE STUDY ></a>
+                </div>
+            </div>
+            <div class="compCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0">
+                <img class="card-img-top w-100 compImg" src="images/coImg4.jpg" alt="Card image">
+                <div class="card-body bgDarkRed text-light d-flex flex-column justify-content-around">
+                    <img class="comLogo w-50 align-self-center" src="images/comp4.png" alt="LAVAZZA">
+                    <p class="card-text">LAVAZZA reduces localization costs by 47% with GlobalLink and Adobe</p>
+                    <a href="#" class="text-light">CASE STUDY ></a>
+                </div>
+            </div>
+            <div class="compCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0">
+                <img class="card-img-top w-100 compImg" src="images/coImg5.jpg" alt="Card image">
+                <div class="card-body bgDarkRed text-light d-flex flex-column justify-content-around">
+                    <img class="comLogo w-50 align-self-center" src="images/comp5.png" alt="citrix">
+                    <p class="card-text">citrix manages 21 websites by only 2 people with GlobalLink</p>
+                    <a href="#" class="text-light">CASE STUDY ></a>
+                </div>
+            </div>
+            <div class="compCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0">
+                <img class="card-img-top w-100 compImg" src="images/coImg6.jpg" alt="Card image">
+                <div class="card-body bgDarkRed text-light d-flex flex-column justify-content-around">
+                    <img class="comLogo w-50 align-self-center" src="images/comp6.png" alt="oracle">
+                    <p class="card-text">oracle manages all the GlobalLinks with only 2 people</p>
+                    <a href="#" class="text-light">CASE STUDY ></a>
+                </div>
+            </div>
+            <div class="compCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0">
+                <img class="card-img-top w-100 compImg" src="images/coImg7.jpg" alt="Card image">
+                <div class="card-body bgDarkRed text-light d-flex flex-column justify-content-around">
+                    <img class="comLogo w-50 align-self-center" src="images/comp7.png" alt="Adobe">
+                    <p class="card-text">Adobe helps us to get your GlobalLink and reduce localization cost</p>
+                    <a href="#" class="text-light">CASE STUDY ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- second fixed bg -->
+    <section class="bg bgTwo container-fluid noMP"></section>
+    <!-- special thanks -->
+    <section class="container-fluid bgDarkRed noMP pt-3">
+        <h2 class="text-light text-center title mb-3 blackTextShadow">SPECIAL THANKS</h2>
+        <div class="row bg-light w-100 justify-content-between pb-5 mx-0" style="gap: 5px 20px;">
+            <div class="thanksCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0 cardShadow ">
+                <img class="card-img-top  cardShadow" src="images/instructor.svg" alt="instructor" style="height: 70%;">
+                <div class="card-body bgDarkRed text-light cardShadow">
+                    <p class="card-title text-center" style="font-size: 1.15rem;">🌟Ang. Islam🌟</p>
+                </div>
+            </div>
+            <div class="thanksCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0 cardShadow">
+                <img class="card-img-top  cardShadow" src="images/family.svg" alt="family" style="height: 70%;">
+                <div class="card-body bgDarkRed text-light cardShadow">
+                    <p class="card-title text-center" style="font-size: 1.15rem;">🌸Supportive Family🌸</p>
+                </div>
+            </div>
+            <div class="thanksCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0 cardShadow">
+                <img class="card-img-top  cardShadow" src="images/friend.svg" alt="friends" style="height: 70%;">
+                <div class="card-body bgDarkRed text-light cardShadow">
+                    <p class="card-title text-center" style="font-size: 1.15rem;">🌼Loyal Friends🌼</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- join us -->
+    <section class="container-fluid bgRed noMP pt-3">
+        <h2 class="text-dark text-center title mb-3 headTextShadow">Join Us</h2>
+        <div class="row bg-light bg-pattern w-100 justify-content-between pb-5 mx-0" style="gap: 5px 20px;">
+            <div
+                class="joinCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0 cardShadow d-flex flex-row">
+                <div class="card-body bgDarkRed text-light">
+                    <p class="card-title text-center" style="font-size: 1.15rem;">Follow Us On</p>
+                    <p class="card-text text-center pointer-cursor">Facebook</p>
+                </div>
+                <div class="joinIcon d-flex flex-column justify-content-around">
+                    <p class="text-dark"><i class="fab fa-facebook-square"></i></p>
+                </div>
+            </div>
+            <div
+                class="joinCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0 cardShadow d-flex flex-row">
+                <div class="card-body bgDarkRed text-light">
+                    <p class="card-title text-center" style="font-size: 1.15rem;">Follow Us On</p>
+                    <p class="card-text text-center pointer-cursor">Twitter</p>
+                </div>
+                <div class="joinIcon d-flex flex-column justify-content-around">
+                    <p class="text-dark"><i class="fab fa-twitter-square"></i></p>
+                </div>
+            </div>
+            <div
+                class="joinCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0 cardShadow d-flex flex-row">
+                <div class="card-body bgDarkRed text-light">
+                    <p class="card-title text-center" style="font-size: 1.15rem;">Follow Us On</p>
+                    <p class="card-text text-center pointer-cursor">Youtube</p>
+                </div>
+                <div class="joinIcon d-flex flex-column justify-content-around">
+                    <p class="text-dark"><i class="fab fa-youtube-square"></i></p>
+                </div>
+            </div>
+            <div
+                class="joinCard card col-12 col-sm-6 col-md-4 col-lg-3 noBorder bgRed mt-5 mx-auto p-0 cardShadow d-flex flex-row">
+                <div class="card-body bgDarkRed text-light">
+                    <p class="card-title text-center" style="font-size: 1.15rem;">Follow Us On</p>
+                    <p class="card-text text-center pointer-cursor">Instagram</p>
+                </div>
+                <div class="joinIcon d-flex flex-column justify-content-around">
+                    <p class="text-dark"><i class="fab fa-instagram-square"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer container bgLight textDark p-5">
+            <div class="row">
+                <article class=" col-sm-4 col-12 noMP">
+                    <h5 class="heading">Find us</h5>
+                    <!--headin5_amrc-->
+                    <p class="mb-10">We will be thrilled to help you contact you,and since customer is our top priority, you can contact us now throw one of our contacts method shown bellow</p>
+                    <p><i class="fa fa-location-arrow footerIcon"></i> 4385 Alfred Drive Brooklyn NY </p>
+                    <p><i class="fa fa-phone footerIcon"></i> +20-1100000000 </p>
+                    <p><i class="fa fa fa-envelope footerIcon"></i> random@mars.us </p>
+                </article>
+                <article class=" col-sm-4 col-6 noMP">
+                    <h5 class="heading">What we do</h5>
+                    <!--heading-->
+                    <ul class="list-group">
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">E-Commerce Translation</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">DTP & File Conversion</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">Video Translation</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">E-Learning Translation</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">Document Translation</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">Website Translation</a></li>
+                    </ul>
+                </article>
+                <article class=" col-sm-4 col-6 noMP">
+                    <h5 class="heading">Resources</h5>
+                    <!--heading-->
+                    <ul class="list-group">
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">Case Studies</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">WordPress Translation</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">API</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">White Papers</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">COVID-19 Resources</a></li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#">Wordcourt Tools</a></li>
+                    </ul>
+                </article>
+                <article class=" col-sm-4 col-12 noMP mx-auto">
+                    <h5 class="heading">Follow us</h5>
+                    <ul class="list-group d-flex">
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#"><p>Click here to view our page <span class="textCyan"><i class="fab fa-facebook-f"></i> Fecebook</span></p></a>
+                        </li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#"><p>Click here to view our page <span class="textCyan"><i class="fab fa-twitter"></i> Twitter</span></p></a>
+                        </li>
+                        <li><a class="list-group-item list-group-item-action bgLight" href="#"><p>Click here to view our page <span class="textCyan"><i class="fab fa-instagram"></i> Instagram</span></p></a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <div class="container py-2 mb-3">
+            <ul class="container-fluid d-flex flex-wrap flex-row justify-content-around">
+                <li class="footerList"><a class="list-group-item noBorder textCyan bgLight" href="#">Home</a></li>
+                <li class="footerList"><a class="list-group-item noBorder textCyan bgLight" href="#">Languages</a></li>
+                <li class="footerList"><a class="list-group-item noBorder textCyan bgLight" href="#">Technology</a></li>
+                <li class="footerList"><a class="list-group-item noBorder textCyan bgLight" href="#">Industries</a></li>
+                <li class="footerList"><a class="list-group-item noBorder textCyan bgLight" href="#">About</a></li>
+            </ul>
+            <p class="text-center m-3 bgRed">Copyright @2022 | Designed by <a href="https://github.com/Ran-sy" target="_blank" class="textCyan">Ranim</a></p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="script/bootstrap.bundle.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        function copy(index) {
+            var id, title, btn, msg;
+            title = 'copied to Clipboard';
+            if (index == 1) { id = 'gmail'; btn = 'codeCopyBtn1'; msg = 'copy email' }
+            else if (index == 2) { id = 'address'; btn = 'codeCopyBtn2'; msg = 'copy address' }
+            else { id = 'address1'; btn = 'codeCopyBtn3'; msg = 'copy address' }
+            id = document.getElementById(id).innerHTML;
+            navigator.clipboard.writeText(id);
+            $('#' + btn + '[data-toggle="tooltip"]').tooltip('hide').attr('data-original-title', title).tooltip('update').tooltip('show');
+            setTimeout(() => {
+                $('#' + btn + '[data-toggle="tooltip"]').tooltip('hide').attr('data-original-title', msg).tooltip('update');
+            }, 1000);
+        }
+    </script>
+
+</body>
+
+</html>
